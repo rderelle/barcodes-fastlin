@@ -1,7 +1,7 @@
 # barcodes-fastlin
 
 ### file 'MTBC_barcodes.tsv'
-This file contains all MTBC SNP barcodes built, tested and used in [TBA](http:www.). You can download it and use it to type your fastq files with fastlin.
+This file contains all MTBC SNP barcodes built, tested and used in [TBA](http:www.). It can be used to type MTBC fastq files with fastlin.
 
 
 ### build your own barcode file
