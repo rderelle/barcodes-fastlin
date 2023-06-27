@@ -19,7 +19,7 @@ def parse_args():
     elif not args.s :
         sys.exit('\n            ERROR: please specify a tab-delimited SNP barcodes\n\n')
     
-    return args.d, args.p, args.k, args.m, args.t 
+    return args.g, args.s
 
 
 def read_fasta(fasta_content):
