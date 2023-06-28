@@ -13,12 +13,20 @@ To build your own barcode file, you will need:
 
 The tab-delimited SNP file should have 3 columns: (i) the lineage, (ii) the 0-based position of the SNP in the genome assembly and (iii) the alternative nucleotide corresponding to the SNP. The script '1_build_barcode_file.py' generates the barcode file as output ('output.tsv').
 
-An example of input files is provided in the directory 'data' (need to uncompress fasta file):
+An example of input files is provided in the directory 'data' (need to first uncompress the fasta file):
 ```
 python3 1_build_barcode_file.py -g data/H37Rv_genome.fasta -s data/SNPs_file.tsv
 ```
 
 ### test your barcode file
+Once the barcode file has been generated, you can use the script '2_test_barcode_file.py' to test a range of kmer sizes (here from 11 to 99) and determine the minimal kmer size at which fastlin would not generate false positives.
+The script takes as input the barcode file, a genome assembly file for which the lineage is known and the lineage of the genome assembly (the script will ignore the barcodes corresponding to the lineage):
+```
+python3 2_test_barcode_file.py -g data/H37Rv_genome.fasta -b MTBC_barcodes.tsv -l 4.9
+```
+
+
+
 
 
 
