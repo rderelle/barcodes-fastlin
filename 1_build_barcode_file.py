@@ -76,7 +76,7 @@ if __name__ == "__main__":
         # save it
         output.write(lineage + '	' + left_kmer + '	' + alt_nucl + '	' + right_kmer + '\n')
 
-    out.close()
+    output.close()
 
 
         
