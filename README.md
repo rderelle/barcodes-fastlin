@@ -1,7 +1,9 @@
 # barcodes-fastlin
 
+This repository contains barcode files, and script to build them, to be used with the lineage typing tool [fastlin](https://github.com/rderelle/fastlin).
+
 ### file 'MTBC_barcodes.tsv'
-This file contains all MTBC SNP barcodes built, tested and used in [TBA](http:www.). It can be used to type MTBC fastq files with fastlin.
+This file contains all MTBC SNP barcodes built, tested and used in REF. It can be used to type MTBC fastq files with fastlin.
 
 
 ### build your own barcode file
