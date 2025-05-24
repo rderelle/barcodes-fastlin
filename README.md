@@ -1,11 +1,20 @@
-# barcodes-fastlin
 
 This repository contains barcode files, and script to build them, to be used with the lineage typing tool [fastlin](https://github.com/rderelle/fastlin).
 
-### file 'MTBC_barcodes.tsv'
-This file contains all MTBC SNP barcodes built, tested and used in the Bioinformatics manuscript describing fastlin.
+# MTBC barcode files 
 
-### build your own barcode file
+###  MTBC_barcodes_v1.tsv
+This file contains 1,100 MTBC SNP barcodes that were built, tested, and used in the Bioinformatics manuscript describing fastlin. These barcodes were extracted from TB-profiler v5.0.0, with the exception of the SNP at position 1882572 (lineage 4.9.1), which was excluded because it appeared in every sample when using k=25.
+
+###  MTBC_barcodes_v2.tsv
+This file contains an updated in-house set of 1,220 SNP barcodes, based on TB-profiler v6.6.2, with the following modifications:
+- removed the SNP at position 1882572 (as above), and all SNP barcodes corresponding to M. canetti, which were mostly not detected by fastlin.
+- added 10 new SNP barcodes each for the <i>species</i> M. canetti, M. microti, and M. pinnipedii.
+- supplemented underrepresented La(x) lineages (which previously had only 4–5 barcodes); all but two now have 10 SNP barcodes.
+
+The performance of these barcodes on 729 MTBC genome assemblies is shown in the file out_fastlin_v2.txt.
+
+# build your own barcode file
 To build your own barcode file, you will need:
 + python 3+
 + the genome assembly of M. tuberculosis (used to identify the SNPs)
