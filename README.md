@@ -16,7 +16,7 @@ The performance of these barcodes on 729 MTBC genome assemblies is shown in the 
 
 ###  MTBC_barcodes_v3.tsv
 This file contains 1,230 SNP barcodes derived from v2:
-- reverse-complemented some barcodes of v2. This has no impact on fastlin inferences but allows to generate the barcode file using the script 1_build_barcode_file.py.
+- reverse-complemented some barcodes of v2. This has no impact on fastlin inferences but allows to generate the barcode file using the script data/1_build_barcode_file.py and the SNP file data/SNP_file_v3.tsv.
 - added 10 new SNP barcodes for lineage 10
 
 The performance of these barcodes on 729 MTBC genome assemblies is shown in the file out_fastlin_v3.txt.
